@@ -1,0 +1,244 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 2rem;
+  background-image: url(https://i.gifer.com/embedded/download/5vzB.gif);
+  background-color: rgba(47, 40, 40, 0.474);
+  background-blend-mode: overlay;
+}
+
+header {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 4rem;
+  border: 3px solid rgba(250, 114, 198, 0.808);
+  background-image: url(https://images7.alphacoders.com/108/1089730.jpg);
+  background-color: rgba(185, 96, 96, 0.5);
+  background-blend-mode: overlay;
+}
+
+h1 {
+  font-family: 'Arial', sans-serif;
+  font-size: 48px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background: linear-gradient(45deg, #021226e9, #1c0b28a2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 2px 2px 4px rgba(175, 116, 116, 0.499);
+  padding: 10px;
+  display: inline-block;
+}
+
+span {
+  color: white;
+  font-size: 48px;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  letter-spacing: 2px;
+  padding: 10px;
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 4s steps(40), blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #fff;
+  }
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  width: 90%;
+  max-width: 1200px;
+  margin-top: 2rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 400px;
+  padding: 2rem;
+  background-image: url(https://img.freepik.com/vector-gratis/fondo-colorido-siluetas-palmeras_23-2148556830.jpg);
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  gap: 15px;
+}
+
+form input {
+  padding: 15px;
+  border-radius: 5px;
+}
+
+form button {
+  margin-top: 2rem;
+  padding: .5rem 2rem;
+  background-color: rgb(215, 38, 38);
+  color: rgba(13, 96, 112, 0.982);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  background-image: linear-gradient(to right, #6acbcd, #748385f5);
+}
+
+form button:hover {
+  background-color: #b5a19eee;
+  background-image: none;
+}
+
+.agenda {
+  border: 3px solid salmon;
+  margin: 1rem auto;
+  width: 100%;
+  max-width: 800px;
+  background-image: url(https://img.freepik.com/vector-gratis/fondo-colorido-siluetas-palmeras_23-2148556830.jpg);
+}
+
+.contacto {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin: 1rem;
+  justify-content: center;
+  text-align: center;
+}
+
+.contacto > * {
+  flex-basis: 100%;
+}
+
+footer {
+  color: rgb(173, 137, 137);
+  padding: 2rem;
+  text-align: center;
+  background-image: url(assets/agendagif.gif);
+  background-size: contain;
+  background-position: right;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30rem;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 1200px) {
+  main {
+    width: 95%;
+  }
+
+  form {
+    max-width: 100%;
+    padding: 1.5rem;
+  }
+
+  .agenda {
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  header,
+  form,
+  .agenda,
+  .contacto {
+    width: 100%;
+    padding: 2rem;
+  }
+
+  h1 {
+    font-size: 34px;
+  }
+
+  main {
+    gap: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 50px;
+  }
+
+  form {
+    padding: 1.5rem;
+  }
+
+  .contacto > * {
+    flex-basis: 50%;
+  }
+
+  
+}
+footer span {
+  font-size: 14px;
+  }
+
+
+
+
+
+
+@media screen and (max-width: 576px) {
+  h1 {
+    font-size: 22px;
+  }
+
+  form {
+    font-size: 12px;
+  }
+
+  footer {
+    font-size: 14px;
+  }
+
+  footer span {
+    font-size: 10px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  footer span {
+    font-size: 20px;
+  }
+}
